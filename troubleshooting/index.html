@@ -411,6 +411,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    MacOS
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -547,6 +554,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    MacOS
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -579,7 +593,7 @@ java.lang.IllegalStateException: Missing header Content-Length in input &quot;{}
 
 &quot;&quot;&quot;
 </code></pre></div>
-<p>If that is ok, clojure-lsp logs to <code>/tmp/clojure-lsp.out</code>, so watch that file and start your editor.</p>
+<p>If that is ok, clojure-lsp logs to <code>/tmp/clojure-lsp.*.out</code>, so watch that file and start your editor.</p>
 <p>LSP Clients also generally have a way to trace server interactions. Turn that on and attach both server and client logs to an issue if it's not obvious what's going on.</p>
 <hr />
 <h2 id="go-to-definition-doesnt-work">Go to definition doesn't work<a class="headerlink" href="#go-to-definition-doesnt-work" title="Permanent link">#</a></h2>
@@ -589,13 +603,15 @@ If the definition lives under a different source dir, you can defiine <code>src-
 <p>It is also important to get your <code>project-root</code> correct in your client otherwise the source paths will not be found.
 Usually there's an option to search for a project file, so for a lein project you would have your client search for <code>project.clj</code>.</p>
 <h3 id="check-the-logs">Check the logs<a class="headerlink" href="#check-the-logs" title="Permanent link">#</a></h3>
-<p>There are a couple reasons why go to definition could fail. First, start tailing <code>/tmp/clojure-lsp.out</code>.</p>
+<p>There are a couple reasons why go to definition could fail. First, start tailing <code>/tmp/clojure-lsp.*.out</code>.</p>
 <p>The logs will generally explain why go to definition failed.</p>
 <h3 id="the-definition-is-still-not-found">The definition is still not found<a class="headerlink" href="#the-definition-is-still-not-found" title="Permanent link">#</a></h3>
 <p>Raise an issue or ask in clojurians slack.</p>
 <hr />
 <h2 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">#</a></h2>
 <p>See https://github.com/snoe/clojure-lsp/issues/28 and https://github.com/snoe/clojure-lsp/issues/25</p>
+<h2 id="macos">MacOS<a class="headerlink" href="#macos" title="Permanent link">#</a></h2>
+<p>In some version of MacOS, Apple restrict the binary to run, to fix that run: <code>xattr -d com.apple.quarantine /path/to/clojure-lsp</code></p>
                 
                   
                     
@@ -604,7 +620,7 @@ Usually there's an option to search for a project file, so for a lein project yo
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 11, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 13, 2021</span>
     
   </small>
 </div>
