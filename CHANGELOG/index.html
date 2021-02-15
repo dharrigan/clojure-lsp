@@ -45,7 +45,7 @@
     
       
         
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-NZM65LSVS3","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-189476519-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
 <script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
@@ -186,6 +186,18 @@
   <li class="md-tabs__item">
     <a href="../features/" class="md-tabs__link">
       Features
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../installation/" class="md-tabs__link">
+      Installation
     </a>
   </li>
 
@@ -375,6 +387,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../installation/" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
     <a href="https://opencollective.com/clojure-lsp" class="md-nav__link">
       Support Us
     </a>
@@ -421,6 +446,13 @@
         <li class="md-nav__item">
   <a href="#unreleased" class="md-nav__link">
     Unreleased
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210214-194647" class="md-nav__link">
+    2021.02.14-19.46.47
   </a>
   
 </li>
@@ -639,6 +671,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#20210214-194647" class="md-nav__link">
+    2021.02.14-19.46.47
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#20210213-180419" class="md-nav__link">
     2021.02.13-18.04.19
   </a>
@@ -832,6 +871,13 @@
                 
                 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
 <h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<h2 id="20210214-194647">2021.02.14-19.46.47<a class="headerlink" href="#20210214-194647" title="Permanent link">#</a></h2>
+<ul>
+<li>Removing false positive logs from invalid analysis from clj-kondo macro expand analysis</li>
+<li>Fix call hierarchy when the reference was not open yet in the editor.</li>
+<li>Smart re-analyze variable/function references when arguments of the definition were updated.</li>
+<li>Rollback Macos native image compress until it works for MacOS Big Sur - #322</li>
+</ul>
 <h2 id="20210213-180419">2021.02.13-18.04.19<a class="headerlink" href="#20210213-180419" title="Permanent link">#</a></h2>
 <ul>
 <li>Bump clj-kondo to fix false-positive unresolved-vars</li>
@@ -970,7 +1016,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 13, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 15, 2021</span>
     
   </small>
 </div>
@@ -993,7 +1039,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../features/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../installation/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1002,7 +1048,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Features
+                Installation
               </div>
             </div>
           </a>
