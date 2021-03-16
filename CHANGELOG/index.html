@@ -451,6 +451,62 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#20210314-232246" class="md-nav__link">
+    2021.03.14-23.22.46
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210306-170535" class="md-nav__link">
+    2021.03.06-17.05.35
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210305-133547" class="md-nav__link">
+    2021.03.05-13.35.47
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210301-191854" class="md-nav__link">
+    2021.03.01-19.18.54
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210227-233555" class="md-nav__link">
+    2021.02.27-23.35.55
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210226-135848" class="md-nav__link">
+    2021.02.26-13.58.48
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210224-142308" class="md-nav__link">
+    2021.02.24-14.23.08
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210221-210251" class="md-nav__link">
+    2021.02.21-21.02.51
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#20210219-230840" class="md-nav__link">
     2021.02.19-23.08.40
   </a>
@@ -692,6 +748,62 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#20210314-232246" class="md-nav__link">
+    2021.03.14-23.22.46
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210306-170535" class="md-nav__link">
+    2021.03.06-17.05.35
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210305-133547" class="md-nav__link">
+    2021.03.05-13.35.47
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210301-191854" class="md-nav__link">
+    2021.03.01-19.18.54
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210227-233555" class="md-nav__link">
+    2021.02.27-23.35.55
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210226-135848" class="md-nav__link">
+    2021.02.26-13.58.48
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210224-142308" class="md-nav__link">
+    2021.02.24-14.23.08
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210221-210251" class="md-nav__link">
+    2021.02.21-21.02.51
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#20210219-230840" class="md-nav__link">
     2021.02.19-23.08.40
   </a>
@@ -913,9 +1025,53 @@
                 
                 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
 <h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<h2 id="20210314-232246">2021.03.14-23.22.46<a class="headerlink" href="#20210314-232246" title="Permanent link">#</a></h2>
+<ul>
+<li>Fix completion inside refers, re-add support for it - Fixes #364</li>
+<li>Change range of expression functions clj-kondo diagnostics to avoid collision with function signature.</li>
+</ul>
+<h2 id="20210306-170535">2021.03.06-17.05.35<a class="headerlink" href="#20210306-170535" title="Permanent link">#</a></h2>
+<ul>
+<li>Fix incremental didChange, debouncing distincting by uri, fixing some inconsistent file changes
+when multiple files are changed at same time (rename, iedit, etc).</li>
+<li>Make unused-public-var ignore -main public functions.</li>
+<li>Add <code>:exclude-when-defined-by</code> option to <code>unused-public-var</code> linter, check settings documentation for more information.</li>
+</ul>
+<h2 id="20210305-133547">2021.03.05-13.35.47<a class="headerlink" href="#20210305-133547" title="Permanent link">#</a></h2>
+<ul>
+<li>Fix clojure-lsp lint crash when analyzing specific macros with clj-kondo hooks.</li>
+<li>Fix didChange for Nvim client.</li>
+<li>Add new clojure-lsp linter: unused-public-var - Fixes #359</li>
+<li>Add option to disable clj-kondo linter, check settings documentation for more details.</li>
+</ul>
+<h2 id="20210301-191854">2021.03.01-19.18.54<a class="headerlink" href="#20210301-191854" title="Permanent link">#</a></h2>
+<ul>
+<li>Bump clj-kondo fixing issues on require form not being analyzed.</li>
+<li>Fix textDocument/workspaceSymbols to use the query sent by client.</li>
+</ul>
+<h2 id="20210227-233555">2021.02.27-23.35.55<a class="headerlink" href="#20210227-233555" title="Permanent link">#</a></h2>
+<ul>
+<li>Add support to complete full qualified namespaces - Fixes #337</li>
+<li>Add <code>:log-path</code> setting to log to a custom file.</li>
+<li>Avoid exception on code actions when on cljc reader macros - Related to #346</li>
+</ul>
+<h2 id="20210226-135848">2021.02.26-13.58.48<a class="headerlink" href="#20210226-135848" title="Permanent link">#</a></h2>
+<ul>
+<li>Improve clojure-lsp config search checking always home dir considering XDG_CONFIG_HOME and project root up to system root (/) - Fixes #339.</li>
+<li>Handle incremental text changes on <code>textDocument/didChange</code> notifications following LSP protocol, improving performance for huge files. </li>
+<li>Add clj-kondo version to --version and server-info.</li>
+<li>Add new create private function code action.</li>
+</ul>
+<h2 id="20210224-142308">2021.02.24-14.23.08<a class="headerlink" href="#20210224-142308" title="Permanent link">#</a></h2>
+<ul>
+<li>Improve completion performance resolving the item only when documentation is requested</li>
+<li>Add new thread first/last all code actions</li>
+</ul>
+<h2 id="20210221-210251">2021.02.21-21.02.51<a class="headerlink" href="#20210221-210251" title="Permanent link">#</a></h2>
 <ul>
 <li>Implement support for textDocument/signatureHelp - Fixes #324</li>
 <li>Disable notify-references on didChange with a flag <code>notify-references-on-change</code>.</li>
+<li>Fix completion not working when reader macro on file - Fixes #332</li>
 </ul>
 <h2 id="20210219-230840">2021.02.19-23.08.40<a class="headerlink" href="#20210219-230840" title="Permanent link">#</a></h2>
 <ul>
@@ -1077,7 +1233,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 21, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 16, 2021</span>
     
   </small>
 </div>
