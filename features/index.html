@@ -447,6 +447,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#completion" class="md-nav__link">
+    Completion
+  </a>
+  
+    <nav class="md-nav" aria-label="Completion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#snippets" class="md-nav__link">
+    Snippets
+  </a>
+  
+    <nav class="md-nav" aria-label="Snippets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-snippets" class="md-nav__link">
+    Custom snippets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#code-actions" class="md-nav__link">
     Code actions
   </a>
@@ -482,9 +515,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#call-hierarchy-incoming-only" class="md-nav__link">
-    Call hierarchy (Incoming only)
+  <a href="#call-hierarchy" class="md-nav__link">
+    Call hierarchy
   </a>
+  
+    <nav class="md-nav" aria-label="Call hierarchy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#incoming" class="md-nav__link">
+    Incoming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outgoing" class="md-nav__link">
+    Outgoing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -632,6 +685,13 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolve-macro-as" class="md-nav__link">
+    Resolve macro as *
+  </a>
   
 </li>
         
@@ -807,6 +867,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#completion" class="md-nav__link">
+    Completion
+  </a>
+  
+    <nav class="md-nav" aria-label="Completion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#snippets" class="md-nav__link">
+    Snippets
+  </a>
+  
+    <nav class="md-nav" aria-label="Snippets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-snippets" class="md-nav__link">
+    Custom snippets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#code-actions" class="md-nav__link">
     Code actions
   </a>
@@ -842,9 +935,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#call-hierarchy-incoming-only" class="md-nav__link">
-    Call hierarchy (Incoming only)
+  <a href="#call-hierarchy" class="md-nav__link">
+    Call hierarchy
   </a>
+  
+    <nav class="md-nav" aria-label="Call hierarchy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#incoming" class="md-nav__link">
+    Incoming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outgoing" class="md-nav__link">
+    Outgoing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -996,6 +1109,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#resolve-macro-as" class="md-nav__link">
+    Resolve macro as *
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#dev" class="md-nav__link">
     Dev
   </a>
@@ -1085,6 +1205,124 @@
 <p><img src="../images/features/rename.gif" width=340></p>
 <h3 id="document-highlight-on-hover-showing-symbol-usages">Document highlight on hover showing symbol usages<a class="headerlink" href="#document-highlight-on-hover-showing-symbol-usages" title="Permanent link">#</a></h3>
 <p><img src="../images/features/document-highlight.gif" width=340></p>
+<h3 id="completion">Completion<a class="headerlink" href="#completion" title="Permanent link">#</a></h3>
+<p><img src="../images/features/completion.gif" width=340></p>
+<h4 id="snippets">Snippets<a class="headerlink" href="#snippets" title="Permanent link">#</a></h4>
+<p><a href="https://microsoft.github.io/language-server-protocol/specifications/specification-current/#snippet_syntax">Snippets</a> are templates that make it easier to enter repeating code patterns, such as common functions/forms, they are available during completion. Tabstops are defined as <code>$number</code> with <code>$0</code> as last tabstop.</p>
+<details>
+<summary><strong>Check all available snippets here</strong></summary>
+
+<table>
+<thead>
+    <tr>
+        <th>name</th>
+        <th>description</th>
+        <th>raw content</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><code>comment$</code></td>
+        <td>Create comment block</td>
+        <td><code>(comment\n  $0\n  )</code></td>
+    </tr>
+    <tr>
+        <td><code>condp$</code></td>
+        <td>Create condp</td>
+        <td><code>(condp ${1:pred} ${2:expr}\n $0)</code></td>
+    </tr>
+    <tr>
+        <td><code>def$</code></td>
+        <td>Create def</td>
+        <td><code>(def ${1:name} $0)</code></td>
+    </tr>
+    <tr>
+        <td><code>defmethod$</code></td>
+        <td>Create defmethod</td>
+        <td><code>(defmethod ${1:name} ${2:match}\n [${3:args}]\n $0)</code></td>
+    </tr>
+    <tr>
+        <td><code>defmulti$</code></td>
+        <td>Create defmulti</td>
+        <td><code>(defmulti ${1:name} ${2:dispatch-fn})</code></td>
+    </tr>
+    <tr>
+        <td><code>defn-$</code></td>
+        <td>Create private function</td>
+        <td><code>(defn%s ${1:name} [$2]\n  $0)</code></td>
+    </tr>
+    <tr>
+        <td><code>defn$</code></td>
+        <td>Create public function</td>
+        <td><code>(defn ${1:foo} [$2]\n  $0)</code></td>
+    </tr>
+    <tr>
+        <td><code>defprotocol$</code></td>
+        <td>Create defprotocol</td>
+        <td><code>(defprotocol ${1:Name}\n $0)</code></td>
+    </tr>
+    <tr>
+        <td><code>defrecord$</code></td>
+        <td>Create defrecord</td>
+        <td><code>(defrecord ${1:Name} [${2:fields}]\n ${3:Protocol}\n $0)</code></td>
+    </tr>
+    <tr>
+        <td><code>deftype$</code></td>
+        <td>Create deftype</td>
+        <td><code>(deftype ${1:Name} [${2:fields}]\n ${3:Protocol}\n $0)</code></td>
+    </tr>
+    <tr>
+        <td><code>fn$</code></td>
+        <td>Create fn</td>
+        <td><code>(fn [${1:arg-list}] $0)</code></td>
+    </tr>
+    <tr>
+        <td><code>if$</code></td>
+        <td>Create if</td>
+        <td><code>(if ${1:test-expr}\n ${2:then-expr}\n ${3:else-expr})</code></td>
+    </tr>
+    <tr>
+        <td><code>import$</code></td>
+        <td>Create import</td>
+        <td><code>(:import [${1:package}])</code></td>
+    </tr>
+    <tr>
+        <td><code>kwargs$</code></td>
+        <td>Create keyword args</td>
+        <td><code>{:keys [${1:keys}] :or {${2:defaults}}}</code></td>
+    </tr>
+    <tr>
+        <td><code>let$</code></td>
+        <td>Create let</td>
+        <td><code>(let [$0])</code></td>
+    </tr>
+    <tr>
+        <td><code>letfn$</code></td>
+        <td>Create letfn</td>
+        <td><code>(letfn [(${1:name} [${2:args}]\n $0)])</code></td>
+    </tr>
+    <tr>
+        <td><code>ns$</code></td>
+        <td>Create ns</td>
+        <td><code>(ns $1\n  $0)</code></td>
+    </tr>
+    <tr>
+        <td><code>require$</code></td>
+        <td>Create require</td>
+        <td><code>(:require [${1:namespace} :as [$0]])</code></td>
+    </tr>
+    <tr>
+        <td><code>use$</code></td>
+        <td>Create use</td>
+        <td><code>(:use [${1:namespace} :only [$0]])</code></td>
+    </tr>
+</tbody>
+</table>
+
+</details>
+
+<h5 id="custom-snippets">Custom snippets<a class="headerlink" href="#custom-snippets" title="Permanent link">#</a></h5>
+<p>User can register additional custom snippets, for more information on how to configure it, check the <a href="https://clojure-lsp.github.io/clojure-lsp/settings/#snippets">snippets settings section</a>.</p>
 <h3 id="code-actions">Code actions<a class="headerlink" href="#code-actions" title="Permanent link">#</a></h3>
 <table>
 <thead>
@@ -1124,11 +1362,11 @@
 </tr>
 <tr>
 <td>Move to let</td>
-<td><img src="../images/features/move-to-let.gif" width=360></td>
+<td><img src="../images/features/move-to-let.gif" width=720></td>
 </tr>
 <tr>
 <td>Change coll to map,vector,set,list</td>
-<td><img src="../images/features/change-coll.gif" width=360></td>
+<td><img src="../images/features/change-coll.gif" width=720></td>
 </tr>
 <tr>
 <td>Thread first/all last</td>
@@ -1137,6 +1375,10 @@
 <tr>
 <td>Create private function</td>
 <td><img src="../images/features/create-private-function.gif" width=360></td>
+</tr>
+<tr>
+<td>Resolve macro as...</td>
+<td><img src="../images/features/resolve-macro-as.gif" width=720></td>
 </tr>
 </tbody>
 </table>
@@ -1148,9 +1390,14 @@
 <p><img alt="" src="../images/features/signature-help.gif" /></p>
 <h3 id="semantic-tokens">Semantic tokens<a class="headerlink" href="#semantic-tokens" title="Permanent link">#</a></h3>
 <p>Experimental: apply color on client editor for each known token</p>
-<h3 id="call-hierarchy-incoming-only">Call hierarchy (Incoming only)<a class="headerlink" href="#call-hierarchy-incoming-only" title="Permanent link">#</a></h3>
-<p>Show all the call hierarchy of a function/variable as a lazy tree</p>
-<p><img alt="" src="../images/features/call-hierarchy.png" /></p>
+<h3 id="call-hierarchy">Call hierarchy<a class="headerlink" href="#call-hierarchy" title="Permanent link">#</a></h3>
+<p>Show the incoming or outgoing call hierarchy of a function/variable as a lazy tree</p>
+<h5 id="incoming">Incoming<a class="headerlink" href="#incoming" title="Permanent link">#</a></h5>
+<p>Show functions that call the current one recursively</p>
+<p><img alt="" src="../images/features/call-hierarchy-incoming.png" /></p>
+<h5 id="outgoing">Outgoing<a class="headerlink" href="#outgoing" title="Permanent link">#</a></h5>
+<p>Show functions that the current one call, recursively</p>
+<p><img alt="" src="../images/features/call-hierarchy-outgoing.png" /></p>
 <h3 id="execute-command">Execute command<a class="headerlink" href="#execute-command" title="Permanent link">#</a></h3>
 <p>Commands that client can request. Some code actions use these commands as actions.</p>
 <h4 id="refactoring">Refactoring<a class="headerlink" href="#refactoring" title="Permanent link">#</a></h4>
@@ -1173,6 +1420,13 @@
 <h5 id="thread-last-all">Thread last all *<a class="headerlink" href="#thread-last-all" title="Permanent link">#</a></h5>
 <h5 id="unwind-all">Unwind all<a class="headerlink" href="#unwind-all" title="Permanent link">#</a></h5>
 <h5 id="unwind-thread">Unwind thread<a class="headerlink" href="#unwind-thread" title="Permanent link">#</a></h5>
+<h4 id="resolve-macro-as">Resolve macro as *<a class="headerlink" href="#resolve-macro-as" title="Permanent link">#</a></h4>
+<p>This code action should be wrapped by the LSP client to provide the missing arguments beside the existing return by the code action: </p>
+<ul>
+<li>The macro which should resolve as e.g. <code>clojure.core/def</code></li>
+<li>The clj-kondo configuration to save the new setting. e.g <code>/home/user/.clj-kondo/config.edn</code></li>
+</ul>
+<p>For an example, check how <a href="https://github.com/emacs-lsp/lsp-mode/commit/73b127f4cf09a443e1353aa6c40b2379b59c1bd6">Emacs LSP client</a> handles that.</p>
 <p><em>* Available via code actions too</em></p>
 <h4 id="dev">Dev<a class="headerlink" href="#dev" title="Permanent link">#</a></h4>
 <h5 id="server-information">Server information<a class="headerlink" href="#server-information" title="Permanent link">#</a></h5>
@@ -1196,7 +1450,7 @@ make most of features work.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 15, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
     
   </small>
 </div>

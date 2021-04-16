@@ -451,6 +451,69 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#20210413-124733" class="md-nav__link">
+    2021.04.13-12.47.33
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210407-163410" class="md-nav__link">
+    2021.04.07-16.34.10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210403-184355" class="md-nav__link">
+    2021.04.03-18.43.55
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210330-204234" class="md-nav__link">
+    2021.03.30-20.42.34
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210326-234107" class="md-nav__link">
+    2021.03.26-23.41.07
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210324-004155" class="md-nav__link">
+    2021.03.24-00.41.55
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210321-232919" class="md-nav__link">
+    2021.03.21-23.29.19
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210318-192341" class="md-nav__link">
+    2021.03.18-19.23.41
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210316-202806" class="md-nav__link">
+    2021.03.16-20.28.06
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#20210314-232246" class="md-nav__link">
     2021.03.14-23.22.46
   </a>
@@ -748,6 +811,69 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#20210413-124733" class="md-nav__link">
+    2021.04.13-12.47.33
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210407-163410" class="md-nav__link">
+    2021.04.07-16.34.10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210403-184355" class="md-nav__link">
+    2021.04.03-18.43.55
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210330-204234" class="md-nav__link">
+    2021.03.30-20.42.34
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210326-234107" class="md-nav__link">
+    2021.03.26-23.41.07
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210324-004155" class="md-nav__link">
+    2021.03.24-00.41.55
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210321-232919" class="md-nav__link">
+    2021.03.21-23.29.19
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210318-192341" class="md-nav__link">
+    2021.03.18-19.23.41
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210316-202806" class="md-nav__link">
+    2021.03.16-20.28.06
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#20210314-232246" class="md-nav__link">
     2021.03.14-23.22.46
   </a>
@@ -1025,6 +1151,67 @@
                 
                 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
 <h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<ul>
+<li>Improve resolve-macro-as command to check and log if couldn't resolve the macro.</li>
+</ul>
+<h2 id="20210413-124733">2021.04.13-12.47.33<a class="headerlink" href="#20210413-124733" title="Permanent link">#</a></h2>
+<ul>
+<li>Add common snippets on completion. Check all available snippets <a href="https://clojure-lsp.github.io/clojure-lsp/features/#snippets">here</a>.</li>
+<li>Add support for custom snippets via <code>:additional-snippets</code>. Check <a href="https://clojure-lsp.github.io/clojure-lsp/features/#snippets">here</a> for more information. - Fixes #403</li>
+<li>Bump lsp4j from 0.11.0 -&gt; 0.12.0</li>
+</ul>
+<h2 id="20210407-163410">2021.04.07-16.34.10<a class="headerlink" href="#20210407-163410" title="Permanent link">#</a></h2>
+<ul>
+<li>Fix renaming keywords in cljc files producing duplicate edits.</li>
+<li>After project startup, publish all project only diagnostics. This is a approach done by other LSPs to make work features like <a href="https://emacs-lsp.github.io/lsp-mode/page/main-features/#project-errors-on-modeline">Project errors</a>. Feature flag via <code>lint-project-files-after-startup?</code> with default <code>true</code>.</li>
+<li>Add experimental support for aarch64 linux native binary</li>
+<li>Fix formatting issues with a regression introduced on a previous release. - Fixes #339 and #396</li>
+</ul>
+<h2 id="20210403-184355">2021.04.03-18.43.55<a class="headerlink" href="#20210403-184355" title="Permanent link">#</a></h2>
+<ul>
+<li>Fix textDocument/workspaceSymbols filter not working on native binaries.</li>
+<li>Report duplicate linters as default, can be disabled via <code>:linters :clj-kondo :report-duplicates</code> - Fixes #390</li>
+<li>Bump rewrite-clj to 1.0.605-alpha to fix exceptions when on clojure files with babashka interpreter on first line.</li>
+<li>Bump clj-kondo 2021.04.01-20210402.215253-6 to fix bug https://github.com/clj-kondo/clj-kondo/issues/1246</li>
+</ul>
+<h2 id="20210330-204234">2021.03.30-20.42.34<a class="headerlink" href="#20210330-204234" title="Permanent link">#</a></h2>
+<ul>
+<li>Bump clj-londo 2021.03.22-20210327.192113-4 - Fixes #385</li>
+<li>Add support for outgoing call hierarchy - Fixes #384</li>
+<li>Improve and fix missing completion item kinds.</li>
+</ul>
+<h2 id="20210326-234107">2021.03.26-23.41.07<a class="headerlink" href="#20210326-234107" title="Permanent link">#</a></h2>
+<ul>
+<li>Bump clj-kondo 2021.03.22-20210324.110254-3 - Fixes #382</li>
+<li>[graalvm] Fixes Unable to invoke no-args constructor for class org.eclipse.lsp4j.ShowDocumentCapabilities error.</li>
+<li>Fix/enhance keyword rename - #383</li>
+</ul>
+<h2 id="20210324-004155">2021.03.24-00.41.55<a class="headerlink" href="#20210324-004155" title="Permanent link">#</a></h2>
+<ul>
+<li>Migrate from lein to deps.edn</li>
+<li>Bump clj-kondo to 2021.03.22</li>
+<li>Fix clean-ns sorting according to symbols not brackets - Fixes #380</li>
+<li>Fix missing graalvm reflect config for CompletionItemTextEdit - Fixes #381</li>
+</ul>
+<h2 id="20210321-232919">2021.03.21-23.29.19<a class="headerlink" href="#20210321-232919" title="Permanent link">#</a></h2>
+<ul>
+<li>Add code action 'resolve macro as', it requires client to fill the chosen macro and clj-kondo config file.</li>
+<li>Bump rewrite-clj to 1.0.594-alpha</li>
+<li>Bump data.json to 2.0.1</li>
+<li>Bump lsp4j to 0.11.0</li>
+</ul>
+<h2 id="20210318-192341">2021.03.18-19.23.41<a class="headerlink" href="#20210318-192341" title="Permanent link">#</a></h2>
+<ul>
+<li>Add support for diagnostic tags: deprecated and unnecessary.</li>
+<li>Fix wrong textDocument/documentHighlight for function local-usages.</li>
+<li>Use new clj-kondo <code>copy-configs</code> flag to copy hooks during lint.</li>
+<li>Bunp clj-kondo to fix unused public linter check for <code>:exclude-when-defined-by</code> </li>
+</ul>
+<h2 id="20210316-202806">2021.03.16-20.28.06<a class="headerlink" href="#20210316-202806" title="Permanent link">#</a></h2>
+<ul>
+<li>Fix server not analyzing after a wrong code on cljs files - #367</li>
+<li>Rollback incremental didChange adding a new <code>:text-document-sync-kind</code> setting with <code>:full</code> as default.</li>
+</ul>
 <h2 id="20210314-232246">2021.03.14-23.22.46<a class="headerlink" href="#20210314-232246" title="Permanent link">#</a></h2>
 <ul>
 <li>Fix completion inside refers, re-add support for it - Fixes #364</li>
@@ -1233,7 +1420,7 @@ when multiple files are changed at same time (rename, iedit, etc).</li>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 16, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 16, 2021</span>
     
   </small>
 </div>
