@@ -451,6 +451,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#20210506-194400" class="md-nav__link">
+    2021.05.06-19.44.00
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210427-201745" class="md-nav__link">
+    2021.04.27-20.17.45
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210423-154947" class="md-nav__link">
+    2021.04.23-15.49.47
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#20210413-124733" class="md-nav__link">
     2021.04.13-12.47.33
   </a>
@@ -811,6 +832,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#20210506-194400" class="md-nav__link">
+    2021.05.06-19.44.00
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210427-201745" class="md-nav__link">
+    2021.04.27-20.17.45
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20210423-154947" class="md-nav__link">
+    2021.04.23-15.49.47
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#20210413-124733" class="md-nav__link">
     2021.04.13-12.47.33
   </a>
@@ -1151,8 +1193,27 @@
                 
                 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
 <h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<h2 id="20210506-194400">2021.05.06-19.44.00<a class="headerlink" href="#20210506-194400" title="Permanent link">#</a></h2>
+<ul>
+<li>Quick fix full text changes to handle it sync for semantic tokens</li>
+<li>Segregate main references from test references with option to disable via <code>lens-segregate-test-references</code></li>
+</ul>
+<h2 id="20210427-201745">2021.04.27-20.17.45<a class="headerlink" href="#20210427-201745" title="Permanent link">#</a></h2>
+<ul>
+<li>Significantly improve the performance of workspace symbol filtering/searching. <a href="https://github.com/anonimitoraf/clj-flx/commit/61b2081b65b7d3be14851bac03ea508147c90054">See relevant commit</a>.</li>
+<li>Always sort refers when clean-ns.</li>
+<li>Add support for installing with homebrew on Linux.</li>
+<li>Bump clj-kondo to <code>2021.04.24-20210426.144134-2</code> adding support for finding re-frame by keyword. Fixes #411</li>
+<li>Fix find definition going to <code>declare</code> - Fixes #340</li>
+<li>Remove common already known clojure macros from <code>Resolve macro as</code> code action.</li>
+</ul>
+<h2 id="20210423-154947">2021.04.23-15.49.47<a class="headerlink" href="#20210423-154947" title="Permanent link">#</a></h2>
 <ul>
 <li>Improve resolve-macro-as command to check and log if couldn't resolve the macro.</li>
+<li>Improve workspace symbol filtering/searching. Now, the sole candidates shown are guaranteed to include all the characters contained in the filter/search string.</li>
+<li>Add more tokens to semantic tokens: keywords, functions/var usages, java classes, local variables.</li>
+<li>Bump Graalvm from 21.0.0 to 21.1.0</li>
+<li>Bump clj-kondo to 2021.04.23 fixing some keywords corner cases.</li>
 </ul>
 <h2 id="20210413-124733">2021.04.13-12.47.33<a class="headerlink" href="#20210413-124733" title="Permanent link">#</a></h2>
 <ul>
@@ -1420,7 +1481,7 @@ when multiple files are changed at same time (rename, iedit, etc).</li>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 16, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 6, 2021</span>
     
   </small>
 </div>
